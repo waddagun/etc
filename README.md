@@ -28,4 +28,4 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
-sudo usermod -aG docker
+sudo usermod -aG docker $USER && newgrp docker
